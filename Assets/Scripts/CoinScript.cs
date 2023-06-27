@@ -5,7 +5,9 @@ using UnityEngine;
 public class CoinScript : MonoBehaviour {
 
 	// Use this for initialization
-	public static int totalCoins = 0; 
+	public static int totalCoins = 0;
+
+	public AudioSource coinSFX; 
 	void Awake () {
 		GetComponent<Collider2D>().isTrigger = true;
 	}
